@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/aman-singh0409/Backend#readme",
+  "bugs": {
+    "url": "https://github.com/aman-singh0409/Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aman-singh0409/Backend.git"
+  },
+  "license": "ISC",
+  "author": "Aman kumar singh",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
