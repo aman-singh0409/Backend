@@ -2,6 +2,10 @@ const express = require('express');
 
 const app = express();
 
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use(function(req,res,next){
     console.log('Middleware run');
     next();
@@ -15,6 +19,8 @@ app.get("/about",function(req,res){
   res.send("This is an about page");
 });
 
+
+//error handler part
 app.get("/profile",function(req,res,next){
   return next(new Error("Something wnet wrong"))
 });
