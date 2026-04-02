@@ -10,6 +10,10 @@ app.set('view engine','ejs');
 app.get('/',function(req,res){
     res.render('index.ejs');
 });
+app.get('/profile/:username',function(req,res){
+    res.send(`welcome,${req.params.username}`);
+});
+
 app.listen(3000,function(){
     console.log("It's running");
 })
